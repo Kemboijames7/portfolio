@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="theme-color" content="#0070f3">
    <meta name="description" content="Frontend Developer Portfolio - AsmrProg">
     <link rel="stylesheet" href="build/taiwind.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
    <link rel="preconnect" href="">
     <title>Tailwind Portfolio</title>
@@ -15,12 +15,90 @@
 <body class="font-sans text-gray-900 dark:text-white bg-white dark:bg-dark-background
 transition-colors duration-300">
 <!-- Dark mode background gradient -->
- <div class="fixed insert-0 -z-10 opacity-0 dark-opacity-100 transition-opacity duration-500
+ <div class="fixed inset-0 -z-10 opacity-0 dark-opacity-100 transition-opacity duration-500
  pointer-events-none">
 <div class="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-secondary/
-10"></div></div>
+10"></div>
+    </div>
+  
+   
     <h1 class="text-2xl">test</h1>
-    <header></header>
+      <!--Header-->
+    <header class="fixed w-full top-0 z-50 bg-white/95 dark:bg-dark-background/95 backdrop-blur-sm
+    shadow-sm transition-all duration-300">
+<div class="container mx-auto px-4"></div>
+<nav class="flex-justify-between items-center py-4">
+    <div class="flex items-center">
+        <span class="text-xl font-extrabold">James</span>
+        <span class="text-primary text-2xl ml-1"></span>
+    </div>
+    <ul class="flex space-x-8">
+        <li>
+            <a href="#features" class="text-gray-700
+            dark:text-gray-300 hover:text-primary dark:hover:text-primary
+            transition-colors
+            ">Showcase</a>
+        </li>
+        <li>
+            <a href="#about" class="text-gray-700
+            dark:text-gray-300 hover:text-primary dark:hover:text-primary
+            transition-colors
+            ">About</a>
+        </li>
+        <li>
+            <a href="#skills" class="text-gray-700
+            dark:text-gray-300 hover:text-primary dark:hover:text-primary
+            transition-colors
+            ">Skills</a>
+        </li>
+        <li>
+            <a href="#projects" class="text-gray-700
+            dark:text-gray-300 hover:text-primary dark:hover:text-primary
+            transition-colors
+            ">Projects</a>
+        </li>
+        <li>
+            <a href="#contact" class="text-gray-700
+            dark:text-gray-300 hover:text-primary dark:hover:text-primary
+            transition-colors
+            ">Contact</a>
+        </li>
+    </ul>
+    <div class="flex items-center space-x-4">
+        <button id="themeToggle" class="">
+            <i class="fa-solid fa-moon text-gray-600
+            dark:text-gray-400"></i>
+        </button>
+        <button class="md:hidden p-2" id="menuToggle">
+            <div class="w-6 h-5 flex flex-col flex-justify-between">
+                <span class="w-full h-0.5 bg-gray-600
+                 dark:bg-gray-400 transition-all"></span>
+                <span class="w-full h-0.5 bg-gray-600
+                 dark:bg-gray-400 transition-all"></span>
+                <span class="w-full h-0.5 bg-gray-600
+                 dark:bg-gray-400 transition-all"></span>
+            </div>
+        </button>
+    </div>
+
+</nav>
+</header>
+
+<!-- Hero sectiom -->
+
+<section id="hero" class="min-h-screen flex items-center pt-20 pb-16
+relative overflow-hidden">
+<div class="container mx-auto px-4">
+    <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-6xl font-bold mb-6">
+          The <span class="bg-gradient-to-r from-primary via-secondary
+          to-accent bg-clip-text text-transparent">React Developer</span> For The web  
+        </h1>
+        
+    </div>
+</div>
+</section>
+
     <nav> 
     <h3>Let’s make it happen</h3>
    <4> Hi, I am James Kemboi
